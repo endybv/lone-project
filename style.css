@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+
+:root {
+    --clr-main-500: hsl(74, 32%, 32%);
+    --clr-main-900: hsl(88, 38%, 15%);
+
+    --clr-secondary-500: hsl(28, 67%, 44%);
+    --clr-secondary-300: hsl(52, 94%, 94%);
+    --clr-secondary-100: hsl(220, 13%, 95%);
+
+    --clr-black-300: hsl(0, 0%, 70%);
+    --clr-black-500: hsl(0, 0%, 30%);
+    --clr-black-900: hsl(0, 0%, 13%);
+
+    --section-space: 5rem;
+    --space-100: 1rem;
+    --space-300: 1.5rem;
+    --space-500: 2rem;
+    --space-700: 3rem;
+}
+
+.break-line {
+    width: 1110px;
+    max-width: calc(100% - 2rem);
+    margin: var(--space-700) auto;
+    border-bottom: 1px solid var(--clr-black-300);
+}
+
+/* Header styling */
+
+.my-nav-bar {
+    margin: 0 auto;
+    background-color: var(--clr-secondary-300);
+    width: 1110px;
+    max-width: calc(100% - 2rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-fuck {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head-content {
+    padding: var(--space-500);
+}
+
+nav {
+    text-align: center;
+    color: var(--clr-main-900);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: var(--space-500);
+}
+
+.head-content-main {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: var(--space-500) var(--space-100);
+    color: var(--clr-main-500);
+    box-shadow: 0 0 5px var(--clr-black-900);
+    border-radius: 15px;
+}
+
+.head-content-main h1 {
+    text-align: center;
+    font-size: var(--space-500);
+    margin-bottom: var(--space-100);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.head-content-main p {
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.homepage {
+    font-size: var(--space-300);
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: block;
+    margin: 1em auto;
+    padding: .5em 1.6em;
+    letter-spacing: 1px;
+    background-color: var(--clr-secondary-500);
+    color: var(--clr-secondary-100);
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* main styling */
+
+.atraction {
+    width: 1110px;
+    max-width: calc(100% - 2rem);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.atraction-title{
+    font-size: var(--space-700);
+    background-image: url(project-files/sentiero-delle-cascate.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: var(--section-space);
+}
+
+.atraction ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.grid-child {
+    background-color: var(--clr-main-900);
+    color: var(--clr-secondary-100);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--clr-black-900);
+}
+
+.grid-child h3 {
+    font-size: var(--space-300);
+    margin-bottom: var(--space-300);
+}
+
+.city-atraction {
+    padding: var(--space-300);
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-atraction-image {
+    width: 80px;
+    transform: translatey(-3rem);
+    border-radius: 100%;
+}
+
+
+/* card styling */
+
+.tourist-guide {
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+.tourist-guide > h3 {
+    font-size: var(--space-500);
+    margin-bottom: var(--space-500);
+    color: var(--clr-main-900);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-500);
+    width: 25em;
+    height: 12em;
+    margin: 0 auto;
+    padding: var(--space-500);
+    background-color: var(--clr-secondary-300);
+    border-radius: 20px;
+    box-shadow: 0 0 4px var(--clr-black-500);
+    color: var(--clr-main-900);
+}
+
+
+
+.card-img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.about-me {
+    margin-bottom: .8rem;
+}
+
+.name {
+    margin-bottom: var(--space-300);
+}
+
+.description li {
+    margin-bottom: .2rem;
+}
